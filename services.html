@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخدمات - E-Ticket</title>
+    <!-- ربط ملف CSS الخاص بالخدمات من فولدر css -->
+    <link rel="stylesheet" href="css/services-style.css">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والناف بار -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo-section">
+                <h1 class="logo-title">E-Ticket</h1>
+                <span class="logo-subtitle">حجز المواعيد الحكومية إلكترونياً</span>
+            </div>
+            <div class="brand-icon">
+                <div class="icon-box">E</div>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية المنسدلة -->
+<nav class="dropdown-menu" id="dropdownMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li class="active"><a href="services.html">الخدمات</a></li>
+        <li><a href="booking.html">احجز موعد</a></li>
+        <li><a href="tickets.html">تذاكري</a></li>
+        <li><a href="help.html">مساعدة</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- محتوى صفحة الخدمات -->
+    <main class="services-container">
+        <div class="page-header">
+            <h2 class="page-title">الخدمات</h2>
+            <p class="page-subtitle">اختار القسم، وبعدها اضغط على الخدمة عشان تحجزها.</p>
+        </div>
+
+        <!-- أزرار التصفية (Filter Tabs) -->
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-category="all">الكل</button>
+            <button class="tab-btn" data-category="civil">أحوال مدنية</button>
+            <button class="tab-btn" data-category="traffic">مرور</button>
+            <button class="tab-btn" data-category="justice">عدل وثائق</button>
+            <button class="tab-btn" data-category="insurance">تأمينات</button>
+        </div>
+
+        <!-- قائمة كروت الخدمات -->
+        <div class="services-list" id="servicesList">
+
+            <div class="service-card" data-category="civil">
+                <div class="service-info">
+                    <h3>تجديد بطاقة الرقم القومي</h3>
+                    <span class="service-time">حوالي 30 دقيقة</span>
+                </div>
+                <div class="service-icon icon-b">ب</div>
+            </div>
+
+            <div class="service-card" data-category="civil">
+                <div class="service-info">
+                    <h3>استخراج شهادة ميلاد</h3>
+                    <span class="service-time">حوالي 20 دقيقة</span>
+                </div>
+                <div class="service-icon icon-m">م</div>
+            </div>
+
+            <div class="service-card" data-category="traffic">
+                <div class="service-info">
+                    <h3>تجديد رخصة القيادة</h3>
+                    <span class="service-time">حوالي 35 دقيقة</span>
+                </div>
+                <div class="service-icon icon-r">ر</div>
+            </div>
+
+            <div class="service-card" data-category="traffic">
+                <div class="service-info">
+                    <h3>تجديد رخصة السيارة</h3>
+                    <span class="service-time">حوالي 35 دقيقة</span>
+                </div>
+                <div class="service-icon icon-s">س</div>
+            </div>
+
+            <div class="service-card" data-category="justice">
+                <div class="service-info">
+                    <h3>استخراج فيش وتشبيه</h3>
+                    <span class="service-time">حوالي 25 دقيقة</span>
+                </div>
+                <div class="service-icon icon-f">ف</div>
+            </div>
+
+            <div class="service-card" data-category="justice">
+                <div class="service-info">
+                    <h3>خدمات الشهر العقاري</h3>
+                    <span class="service-time">حوالي 40 دقيقة</span>
+                </div>
+                <div class="service-icon icon-sh">ش</div>
+            </div>
+
+            <div class="service-card" data-category="insurance">
+                <div class="service-info">
+                    <h3>الاستعلام عن المعاش</h3>
+                    <span class="service-time">حوالي 15 دقيقة</span>
+                </div>
+                <div class="service-icon icon-a">ع</div>
+            </div>
+
+            <div class="service-card" data-category="insurance">
+                <div class="service-info">
+                    <h3>تسجيل بيانات تأمينية</h3>
+                    <span class="service-time">حوالي 30 دقيقة</span>
+                </div>
+                <div class="service-icon icon-t">ت</div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>نموذج مجاني لمنصة E-Ticket. البيانات بتتأحفظ على جهازك بس، وتقدر تربطه بقاعدة بيانات حقيقية.</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت الخاص بالخدمات من فولدر js -->
+    <script src="js/services-script.js"></script>
+</body>
+</html>

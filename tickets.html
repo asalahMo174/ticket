@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تذاكري - E-Ticket</title>
+    <!-- ربط ملف CSS من فولدر css -->
+    <link rel="stylesheet" href="css/tickets-style.css">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والناف بار -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo-section">
+                <h1 class="logo-title">E-Ticket</h1>
+                <span class="logo-subtitle">حجز المواعيد الحكومية إلكترونياً</span>
+            </div>
+            <div class="brand-icon">
+                <div class="icon-box">E</div>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية المنسدلة -->
+<nav class="dropdown-menu" id="dropdownMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="booking.html">احجز موعد</a></li>
+        <li class="active"><a href="tickets.html">تذاكري</a></li>
+        <li><a href="help.html">مساعدة</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- محتوى صفحة تذاكري -->
+    <main class="tickets-container">
+        <div class="page-header">
+            <h2 class="page-title">تذاكري الحالية</h2>
+            <p class="page-subtitle">اعرض تفاصيل تذاكرك المحجوزة ورقم الدور والباركود للوصول.</p>
+        </div>
+
+        <!-- قائمة التذاكر -->
+        <div class="tickets-list">
+            
+            <!-- كارت تذكرة نشطة -->
+            <div class="ticket-card">
+                <div class="ticket-header">
+                    <span class="ticket-status active-status">مؤكدة</span>
+                    <span class="ticket-id">تذكرة #A-102</span>
+                </div>
+
+                <div class="ticket-body">
+                    <h3 class="service-name">تجديد بطاقة الرقم القومي</h3>
+                    <p class="branch-name"><i class="fa-solid fa-location-dot"></i> فرع القاهرة الجديدة – القاهرة</p>
+                    
+                    <div class="ticket-details">
+                        <div>
+                            <span class="label">التاريخ</span>
+                            <strong class="value">25 أكتوبر 2026</strong>
+                        </div>
+                        <div>
+                            <span class="label">الموعد</span>
+                            <strong class="value">10:30 صباحاً</strong>
+                        </div>
+                    </div>
+
+                    <!-- الباركود الصوري التوضيحي -->
+                    <div class="qr-box">
+                        <i class="fa-solid fa-qrcode qr-icon"></i>
+                        <p>امسح الكود عند شباك الاستقبال</p>
+                    </div>
+                </div>
+
+                <div class="ticket-actions">
+                    <button class="btn-cancel" onclick="cancelTicket(this)">إلغاء التذكرة</button>
+                    <button class="btn-print" onclick="window.print()">طباعة</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>نموذج مجاني لمنصة E-Ticket. البيانات بتتأحفظ على جهازك بس، وتقدر تربطه بقاعدة بيانات حقيقية.</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت من فولدر js -->
+    <script src="js/tickets-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعدة - E-Ticket</title>
+    <!-- ربط ملف CSS الخاص بالدعم الفني والمساعدة -->
+    <link rel="stylesheet" href="css/help-style.css">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والناف بار مع الربط الكامل لجميع الصفحات -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo-section">
+                <h1 class="logo-title">E-Ticket</h1>
+                <span class="logo-subtitle">حجز المواعيد الحكومية إلكترونياً</span>
+            </div>
+            <div class="brand-icon">
+                <div class="icon-box">E</div>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية المنسدلة -->
+        <nav class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="booking.html">احجز موعد</a></li>
+                <li><a href="tickets.html">تذاكري</a></li>
+                <li class="active"><a href="help.html">مساعدة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوى صفحة مساعدة -->
+    <main class="help-container">
+        <div class="page-header">
+            <h2 class="page-title">مركز المساعدة والدعم</h2>
+            <p class="page-subtitle">نحن هنا لمساعدتك! تصفح الأسئلة الشائعة أو تواصل معنا مباشرة.</p>
+        </div>
+
+        <!-- قسم الأسئلة الشائعة -->
+        <section class="faq-section">
+            <h3 class="section-title"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</h3>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>كيف يمكنني إلغاء تذكرتي؟</span>
+                    <i class="fa-solid fa-chevron-down icon-arrow"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>يمكنك الانتقال إلى صفحة "تذاكري" من القائمة الرئيسية ثم الضغط على زر "إلغاء التذكرة" الموجود أسفل التذكرة المراد إلغاؤها.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>هل الحجز الإلكتروني مجاني؟</span>
+                    <i class="fa-solid fa-chevron-down icon-arrow"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>نعم، جميع خدمات حجز المواعيد وحجز التذاكر عبر منصة E-Ticket مجانية تماماً وبدون أي رسوم إضافية.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>ماذا أفعل عند الوصول إلى الفرع؟</span>
+                    <i class="fa-solid fa-chevron-down icon-arrow"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>عند وصولك للمقر في الموعد المترتب، قم بإبراز الباركود (QR Code) الموجود بتذكرتك لموظف الاستقبال لربط دورك بالنظام المباشر.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- فورم التواصل والاستفسار -->
+        <section class="contact-card">
+            <h3 class="section-title"><i class="fa-solid fa-headset"></i> تواصل معنا</h3>
+            <form id="helpForm">
+                <div class="form-group">
+                    <label for="contactName">الاسم الكامل</label>
+                    <input type="text" id="contactName" placeholder="أدخل اسمك" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">البريد الإلكتروني أو رقم الهاتف</label>
+                    <input type="text" id="contactEmail" placeholder="مثال: name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">رسالتك أو استفسارك</label>
+                    <textarea id="contactMessage" rows="4" placeholder="اكتب تفاصيل استفسارك هنا..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-send">إرسال الرسالة</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>نموذج مجاني لمنصة E-Ticket. البيانات بتتأحفظ على جهازك بس، وتقدر تربطه بقاعدة بيانات حقيقية.</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت الخاص بالمساعدة من فولدر js -->
+    <script src="js/help-script.js"></script>
+</body>
+</html>

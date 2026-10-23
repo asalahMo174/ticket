@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket - حجز المواعيد الحكومية إلكترونياً</title>
+    <!-- ربط ملف CSS من فولدر css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والناف بار -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo-section">
+                <h1 class="logo-title">E-Ticket</h1>
+                <span class="logo-subtitle">حجز المواعيد الحكومية إلكترونياً</span>
+            </div>
+            <div class="brand-icon">
+                <div class="icon-box">E</div>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية المنسدلة -->
+        <nav class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li class="active"><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="booking.html">احجز موعد</a></li>
+                <li><a href="tickets.html">تذاكري</a></li>
+                <li><a href="help.html">مساعدة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الهيرو سكشن (قسم الحجز الرئيسي) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="badge">منصة E-Ticket للخدمات الحكومية</span>
+            <h2 class="hero-title">احجز موعدك الحكومي بدون طوابير</h2>
+            <p class="hero-description">اختار الفرع والخدمة والموعد المناسب، واستلم تذكرتك الإلكترونية فوراً.</p>
+
+            <!-- كارت اختيار الخدمة والفرع -->
+            <div class="booking-card">
+                <div class="select-group">
+                    <select id="serviceSelect" required>
+                        <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                        <option value="1">تجديد بطاقة الرقم القومي</option>
+                        <option value="2">استخراج شهادة ميلاد</option>
+                        <option value="3">تجديد رخصة القيادة</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <select id="branchSelect" required>
+                        <option value="" disabled selected>اختر الفرع المناسب...</option>
+                        <option value="1">فرع القاهرة الجديدة – القاهرة</option>
+                        <option value="2">فرع الجيزة – الجيزة</option>
+                        <option value="3">فرع الدقي – الجيزة</option>
+                    </select>
+                </div>
+                <button class="btn-primary" id="bookNowBtn">احجز الآن</button>
+            </div>
+
+            <p class="hero-footer-text">تأكيد فوري • تذكرة إلكترونية • إلغاء مجاني</p>
+        </div>
+    </section>
+
+    <!-- قسم "إزاي بيشتغل" -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <h2>إزاي بيشتغل</h2>
+            <p>تلات خطوات وتخلص.</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-card">
+                <h3>اختار الخدمة والفرع</h3>
+                <p>كل فرع بيبعرض الخدمات المتاحة عنده بس.</p>
+            </div>
+            <div class="step-card">
+                <h3>حدد التاريخ والموعد</h3>
+                <p>المواعيد المحجوزة بتتأفل تلقائي.</p>
+            </div>
+            <div class="step-card">
+                <h3>استلم تذكرتك</h3>
+                <p>رقم دور وباركود تعرضه عند الوصول.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>نموذج مجاني لمنصة E-Ticket. البيانات بتتأحفظ على جهازك بس، وتقدر تربطه بقاعدة بيانات حقيقية.</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت من فولدر js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

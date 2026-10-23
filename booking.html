@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز موعد - E-Ticket</title>
+    <link rel="stylesheet" href="css/booking-style.css">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والناف بار -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo-section">
+                <h1 class="logo-title">E-Ticket</h1>
+                <span class="logo-subtitle">حجز المواعيد الحكومية إلكترونياً</span>
+            </div>
+            <div class="brand-icon">
+                <div class="icon-box">E</div>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية المنسدلة -->
+<nav class="dropdown-menu" id="dropdownMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li class="active"><a href="booking.html">احجز موعد</a></li>
+        <li><a href="tickets.html">تذاكري</a></li>
+        <li><a href="help.html">مساعدة</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- محتوى صفحة حجز الموعد -->
+    <main class="booking-container">
+        <div class="page-header">
+            <h2 class="page-title">تحديد التاريخ والموعد</h2>
+            <p class="page-subtitle">ادخل بياناتك واكتب تاريخ اليوم المناسب لحجز التذكرة.</p>
+        </div>
+
+        <form id="bookingForm" class="booking-form-card">
+            <!-- تفاصيل الخدمة والفرع -->
+            <div class="form-group">
+                <label for="fullName">الاسم بالكامل</label>
+                <input type="text" id="fullName" placeholder="أدخل اسمك الثلاثي" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nationalId">الرقم القومي</label>
+                <input type="text" id="nationalId" maxlength="14" placeholder="أدخل 14 رقم" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingDate">تاريخ الحجز</label>
+                <input type="date" id="bookingDate" required>
+            </div>
+
+            <!-- اختيار الوقت -->
+            <div class="form-group">
+                <label>اختر الموعد المتاح</label>
+                <div class="time-slots">
+                    <button type="button" class="time-btn" data-time="09:00 AM">09:00 صباحاً</button>
+                    <button type="button" class="time-btn" data-time="10:30 AM">10:30 صباحاً</button>
+                    <button type="button" class="time-btn" data-time="12:00 PM">12:00 ظهراً</button>
+                    <button type="button" class="time-btn" data-time="01:30 PM">01:30 ظهراً</button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">تأكيد حجز التذكرة</button>
+        </form>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>نموذج مجاني لمنصة E-Ticket. البيانات بتتأحفظ على جهازك بس، وتقدر تربطه بقاعدة بيانات حقيقية.</p>
+    </footer>
+
+    <script src="js/booking-script.js"></script>
+</body>
+</html>
